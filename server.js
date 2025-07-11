@@ -27,6 +27,10 @@ app.use(cookieParser());
 app.use(express.json());
 
 // Api endpoints
+app.get('/', (req, res) => {
+  res.send('🎉 API is running successfully!');
+});
+
 app.use("/images", express.static("uploads"));
 app.use("/api/user", userRoutes);
 app.use("/api/seller", sellerRoutes);
