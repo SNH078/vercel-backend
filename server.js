@@ -19,7 +19,7 @@ const app = express();
 await connectCloudinary();
 
 // allow multiple origins
-const allowedOrigins = ["https://vercel-frontend-fnm6.vercel.app/"];
+const allowedOrigins = ["https://vercel-frontend-4tp4.vercel.app/"];
 
 //middlewares
 app.use(cors({ origin: allowedOrigins, credentials: true }));
